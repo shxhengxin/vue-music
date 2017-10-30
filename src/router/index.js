@@ -9,12 +9,16 @@ Vue.use(Router)
 
 let routes = [
   {
+    path: '/',
+    redirect: '/recommend'
+  },
+  {
     path: '/recommend',
     component: Recommend
   },
   {
     path: '/singer',
-    component: Singer,
+    component: Singer
   },
   {
     path: '/rank',
